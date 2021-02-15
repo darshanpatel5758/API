@@ -1,0 +1,11 @@
+﻿@model API.Models.ViewModels.PlanetViewModel
+
+<ul>
+    @foreach (var planet in Model.Planets)
+    {
+        <li>
+            <h4>@planet.name</h4>
+            <img src="@planet.url" />
+        </li>
+    }
+</ul>

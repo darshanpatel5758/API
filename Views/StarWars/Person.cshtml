@@ -1,0 +1,11 @@
+﻿@model API.Models.ViewModels.PeopleViewModel
+
+<ul>
+    @foreach (var people in Model.Peoples)
+    {
+        <li>
+            <h4>@people.name</h4>
+            <img src="@people.url" />
+        </li>
+    }
+</ul>
